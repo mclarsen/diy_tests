@@ -86,7 +86,7 @@ struct Redistribute
         ints.push_back(incoming);
       } // for
 
-      for(int i = 0; i < ints.size(); ++i)
+      for(int i = 0; i < (int)ints.size(); ++i)
       {
         std::cout<<ints[i] << " ";
       }

@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+
 if (NOT EXISTS ${PROJECT_SOURCE_DIR}/blt/SetupBLT.cmake)
     message(FATAL_ERROR
         "The BLT submodule is not present. "

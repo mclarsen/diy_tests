@@ -68,8 +68,8 @@ void debug(void *b,
   }
   // do compositing?? intermediate stage?
   const int group_size = proxy.out_link().size(); 
-  //const int current_dim = partners.dim(round);
-  
+  const int current_dim = partners.dim(round);
+  (void)current_dim; 
   std::vector<int> out(group_size);
   for(int i = 0; i < group_size; ++i)
   {
