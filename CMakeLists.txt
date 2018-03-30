@@ -17,3 +17,8 @@ blt_add_executable(
     NAME        reduce 
     SOURCES     reduce.cpp 
     DEPENDS_ON  diy mpi)
+
+blt_add_executable(
+    NAME        all_to_all 
+    SOURCES     all_to_all.cpp 
+    DEPENDS_ON  diy mpi)

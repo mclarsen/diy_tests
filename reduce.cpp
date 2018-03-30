@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iterator>
+
 #include <diy/mpi.hpp>
 #include <diy/master.hpp>
 #include <diy/partners/swap.hpp>
@@ -100,7 +102,7 @@ int main(void)
     global_bounds.min[2] = 0;
     global_bounds.max[0] = 512;
     global_bounds.max[1] = 512;
-    global_bounds.max[2] = 512;
+    global_bounds.max[2] = 0;
     // tells diy to use all availible threads
     //const int num_threads = -1; 
     const int num_threads = 1; 
