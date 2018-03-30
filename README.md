@@ -4,8 +4,11 @@ Steps to reproduce:
 git clone --recursive https://github.com/mclarsen/diy_tests.git
 
 cd diy_tests
+
 mkdir build
+
 cd build 
+
 cmake ..
 
 srun -n 189 bin/reduce 
